@@ -1,0 +1,60 @@
+{
+  "author": "indexxuan@gmail.com",
+  "name": "vc-tooltip",
+  "version": "0.0.1",
+  "description": "tooltip component based on vue.js & bootstrap",
+  "scripts": {
+    "start": "webpack-dev-server --inline --hot --quiet",
+    "build:dev": "webpack --progress --hide-modules --config webpack.config.js",
+    "build:prod": "webpack --progress --hide-modules --config webpack.production.js",
+    "build:example": "webpack --progress --hide-modules --config webpack.example.js",
+    "build": "npm run build:dev && npm run build:prod && npm run build:example",
+    "dev": "webpack -w --progress --hide-modules --config webpack.config.js",
+    "example": "webpack -w --progress --hide-modules --config webpack.example.js",
+    "release": "npm run build && npm publish"
+  },
+  "main": "dist/build.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwaimai-bi-fe/vc-tooltip.git"
+  },
+  "homepage": "https://github.com/iwaimai-bi-fe/vc-tooltip#readme",
+  "bugs": {
+    "url": "https://github.com/iwaimai-bi-fe/vc-tooltip/issues"
+  },
+  "keywords": [
+    "tooltip",
+    "component",
+    "vue",
+    "bootstrap"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "vc-popover": "^0.1.1",
+    "vue": "^1.0.24"
+  },
+  "devDependencies": {
+    "babel-core": "^6.1.21",
+    "babel-loader": "^6.1.0",
+    "babel-plugin-transform-runtime": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-runtime": "^6.3.19",
+    "css-loader": "^0.21.0",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.1",
+    "style-loader": "^0.13.0",
+    "swig-loader": "^1.0.0",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "7.1.7",
+    "webpack": "^2.1.0-beta.20",
+    "webpack-dev-server": "^1.12.0"
+  },
+  "files": [
+    "src",
+    "dist/build.js",
+    "dist/build.js.map",
+    "dist/build.min.js"
+  ],
+  "license": "MIT"
+}

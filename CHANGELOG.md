@@ -1,4 +1,4 @@
-<h1 align="center">vc-breadcrumb - @changelog</h1>
+<h1 align="center">vc-tooltip - @changelog</h1>
 
 ## 0.0.1
 
